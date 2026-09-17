@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Rahman — Network Engineer & Web Developer</title>
+<meta name="description" content="Portfolio of Alex Rahman — Network Engineer & Web Developer. Cisco Packet Tracer labs, network design case studies, and web projects.">
+
+<!-- Fonts: Space Grotesk (headlines), Inter (body), JetBrains Mono (data/technical labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- FontAwesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="site-header">
+  <div class="nav-wrap container">
+    <a href="#home" class="brand">
+      <span class="brand-mono">alex<span class="brand-accent">@</span>portfolio</span><span class="brand-cursor">_</span>
+    </a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#home" class="nav-link active-link" data-section="home">Home</a>
+      <a href="#about" class="nav-link" data-section="about">About</a>
+      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+      <a href="#proof" class="nav-link" data-section="proof">Proof of Work</a>
+      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO / HOME ============ -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-text">
+        <p class="hero-kicker">Network Engineer &amp; Web Developer</p>
+        <h1 class="hero-title">Hi, I'm Alex Rahman.<br>I design networks that hold up<br>and interfaces that don't get in the way.</h1>
+        <p class="hero-sub">
+          I plan, configure, and secure enterprise networks in Cisco Packet Tracer, then build the
+          web tools that sit on top of them. Six years split between routing tables and React components.
+        </p>
+
+        <div class="hero-actions">
+          <!-- Swap this href with your actual CV file path -->
+          <a href="files/Alex_Rahman_CV.pdf" class="btn btn-primary" download>
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-envelope"></i> Contact Me
+          </a>
+          <a href="#projects" class="btn btn-ghost">
+            View Projects
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num" data-count="6">0</span>
+            <span class="hero-stat-label">Years experience</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num" data-count="34">0</span>
+            <span class="hero-stat-label">Projects shipped</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num" data-count="9">0</span>
+            <span class="hero-stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <!-- Profile image container — swap image src with your own picture -->
+        <div class="hero-photo-frame">
+          <img src="images/profile.jpg" alt="Portrait of Alex Rahman" class="hero-photo"
+               onerror="this.src='https://i.ibb.co/profile-pic.jpg'">
+          <span class="status-badge"><span class="status-dot"></span>Available for work</span>
+        </div>
+
+        <!-- Animated network topology graphic (pure SVG, literal to the subject matter) -->
+        <svg class="topology-svg" viewBox="0 0 420 420" aria-hidden="true">
+          <g class="topo-lines" stroke="currentColor" stroke-width="1.2" fill="none" opacity="0.55">
+            <line x1="210" y1="210" x2="60" y2="90"></line>
+            <line x1="210" y1="210" x2="350" y2="70"></line>
+            <line x1="210" y1="210" x2="70" y2="330"></line>
+            <line x1="210" y1="210" x2="340" y2="340"></line>
+            <line x1="210" y1="210" x2="210" y2="40"></line>
+            <line x1="60" y1="90" x2="70" y2="330"></line>
+            <line x1="350" y1="70" x2="340" y2="340"></line>
+          </g>
+          <g class="topo-nodes">
+            <circle cx="210" cy="210" r="10" class="node node-core"></circle>
+            <circle cx="60" cy="90" r="6" class="node"></circle>
+            <circle cx="350" cy="70" r="6" class="node"></circle>
+            <circle cx="70" cy="330" r="6" class="node"></circle>
+            <circle cx="340" cy="340" r="6" class="node"></circle>
+            <circle cx="210" cy="40" r="6" class="node"></circle>
+          </g>
+        </svg>
+      </div>
+
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+
+      <div class="about-photo-col">
+        <div class="about-photo-frame">
+          <!-- Swap image src with your own picture -->
+          <img src="images/about.jpg" alt="Alex Rahman working at a desk with network diagrams"
+               onerror="this.src='https://i.ibb.co/about-pic.jpg'">
+        </div>
+      </div>
+
+      <div class="about-text-col">
+        <h2 class="section-title">About</h2>
+        <p class="about-lede">
+          I started out pulling cable and studying for CCNA at nineteen, and ended up just as comfortable
+          in a terminal running <code>show ip route</code> as I am in a code editor shipping a front end.
+        </p>
+        <p>
+          My background is in enterprise networking — designing topologies, configuring routing protocols,
+          and hardening access layers for organizations that can't afford downtime. Along the way I picked
+          up web development to build the internal dashboards and client-facing tools my networking work
+          kept needing, and it stuck. Today I move between both worlds: laying out a multi-site OSPF
+          deployment in the morning, debugging a React state bug in the afternoon.
+        </p>
+        <p>
+          What ties the two together is the same instinct — trace the problem to its root, test before you
+          trust it, and document it well enough that someone else could pick it up cold. That's the
+          standard I hold every lab file and every commit to.
+        </p>
+
+        <div class="about-stats">
+          <div class="about-stat">
+            <span class="about-stat-num">6+</span>
+            <span class="about-stat-label">Years of experience</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-num">34</span>
+            <span class="about-stat-label">Completed projects</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-num">9</span>
+            <span class="about-stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">What I reach for most, grouped by the layer of the stack it lives in.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-panel" data-accent="cyan">
+          <h3 class="skill-panel-title"><i class="fa-solid fa-network-wired"></i> Networking &amp; Routing</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <div class="skill-row"><span>Cisco Packet Tracer / Network Config</span><span class="skill-pct">95%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="95"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-row"><span>Routing Protocols (OSPF, EIGRP, BGP)</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="90"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-row"><span>VLANs &amp; Switching</span><span class="skill-pct">92%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="92"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-row"><span>Troubleshooting &amp; System Admin</span><span class="skill-pct">88%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="88"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-panel" data-accent="amber">
+          <h3 class="skill-panel-title"><i class="fa-solid fa-code"></i> Web Development</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <div class="skill-row"><span>HTML5</span><span class="skill-pct">96%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="96"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-row"><span>CSS3</span><span class="skill-pct">92%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="92"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-row"><span>JavaScript</span><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="85"></div></div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-row"><span>Responsive / Mobile-first Design</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><div class="skill-bar-fill" data-fill="90"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-panel" data-accent="cyan">
+          <h3 class="skill-panel-title"><i class="fa-solid fa-toolbox"></i> Tools &amp; Technologies</h3>
+          <div class="badge-grid">
+            <span class="badge"><i class="fa-solid fa-diagram-project"></i> Packet Tracer</span>
+            <span class="badge"><i class="fa-brands fa-git-alt"></i> Git / GitHub</span>
+            <span class="badge"><i class="fa-solid fa-server"></i> Wireshark</span>
+            <span class="badge"><i class="fa-solid fa-shield-halved"></i> ACLs / NAT / Firewalls</span>
+            <span class="badge"><i class="fa-brands fa-linux"></i> Linux Administration</span>
+            <span class="badge"><i class="fa-solid fa-code-branch"></i> VS Code</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Networking labs and web builds, filterable by type.</p>
+
+      <div class="project-filters" role="tablist" aria-label="Filter projects">
+        <button class="filter-btn active-filter" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="networking">Networking</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+      </div>
+
+      <div class="project-grid" id="project-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card" data-category="networking">
+          <div class="project-card-top">
+            <span class="device-led led-cyan"></span>
+            <span class="project-tag">Networking</span>
+          </div>
+          <h3 class="project-title">Enterprise Network Infrastructure Setup</h3>
+          <p class="project-desc">
+            Complete multi-router, multi-switch network configuration with VLAN segmentation,
+            OSPF routing across three sites, and a redundant DHCP server implementation.
+          </p>
+          <ul class="project-meta">
+            <li>3 sites · 6 routers · 12 switches</li>
+          </ul>
+          <div class="project-actions">
+            <!-- Swap this href with your actual .pkt file URL -->
+            <a href="https://example.com/files/enterprise_network.pkt" class="btn btn-small btn-outline" download>
+              <i class="fa-solid fa-file-arrow-down"></i> Download .PKT Lab File
+            </a>
+            <button class="btn btn-small btn-ghost" data-modal-target="modal-1">Case study</button>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="networking">
+          <div class="project-card-top">
+            <span class="device-led led-cyan"></span>
+            <span class="project-tag">Networking</span>
+          </div>
+          <h3 class="project-title">Campus Network Design &amp; Security Integration</h3>
+          <p class="project-desc">
+            Secure campus network design using Access Control Lists, NAT, and wireless
+            controller configuration to segment student, staff, and guest traffic.
+          </p>
+          <ul class="project-meta">
+            <li>4 buildings · WLC + ACLs · NAT overload</li>
+          </ul>
+          <div class="project-actions">
+            <!-- Swap this href with your actual .pkt file URL -->
+            <a href="https://example.com/files/campus_network.pkt" class="btn btn-small btn-outline" download>
+              <i class="fa-solid fa-file-arrow-down"></i> Download .PKT Lab File
+            </a>
+            <button class="btn btn-small btn-ghost" data-modal-target="modal-2">Case study</button>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="web">
+          <div class="project-card-top">
+            <span class="device-led led-amber"></span>
+            <span class="project-tag">Web</span>
+          </div>
+          <h3 class="project-title">Interactive Web Application / Portfolio</h3>
+          <p class="project-desc">
+            A modern, responsive web application built with HTML, CSS, and JavaScript —
+            the very site you're looking at, along with the dashboard tooling it grew from.
+          </p>
+          <ul class="project-meta">
+            <li>Vanilla JS · CSS Grid &amp; Flexbox · A11y-checked</li>
+          </ul>
+          <div class="project-actions">
+            <!-- Swap these hrefs with your actual demo / repo URLs -->
+            <a href="https://example.com/live-demo" class="btn btn-small btn-outline">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+            <a href="https://github.com/yourusername/your-repo" class="btn btn-small btn-ghost">
+              <i class="fa-brands fa-github"></i> GitHub Repo
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROOF OF WORK ============ -->
+  <section id="proof" class="proof">
+    <div class="container">
+      <h2 class="section-title">Proof of Work</h2>
+      <p class="section-sub">Verifiable evidence — topology screenshots, certificates, and case studies.</p>
+
+      <div class="proof-gallery">
+        <!-- Swap each src with your own screenshots -->
+        <figure class="proof-item">
+          <img src="images/proof-topology1.jpg" alt="Screenshot of Enterprise Network Infrastructure topology in Packet Tracer"
+               onerror="this.src='https://placehold.co/480x320/121820/8B98A5?text=Topology+Screenshot'">
+          <figcaption>Enterprise topology — OSPF core</figcaption>
+        </figure>
+        <figure class="proof-item">
+          <img src="images/proof-topology2.jpg" alt="Screenshot of Campus Network topology in Packet Tracer"
+               onerror="this.src='https://placehold.co/480x320/121820/8B98A5?text=Topology+Screenshot'">
+          <figcaption>Campus network — ACL &amp; NAT</figcaption>
+        </figure>
+        <figure class="proof-item">
+          <img src="images/proof-certificate1.jpg" alt="CCNA certification"
+               onerror="this.src='https://placehold.co/480x320/121820/8B98A5?text=Certificate'">
+          <figcaption>CCNA — Cisco Certified Network Associate</figcaption>
+        </figure>
+        <figure class="proof-item">
+          <img src="images/proof-certificate2.jpg" alt="Network Security certification"
+               onerror="this.src='https://placehold.co/480x320/121820/8B98A5?text=Certificate'">
+          <figcaption>Network Security Fundamentals</figcaption>
+        </figure>
+      </div>
+
+      <div class="case-studies">
+
+        <div class="case-study">
+          <span class="case-step">01</span>
+          <div>
+            <h4>Problem</h4>
+            <p>A three-site branch office needed unified routing with no single point of failure and sub-second failover during a link drop.</p>
+          </div>
+        </div>
+        <div class="case-study">
+          <span class="case-step">02</span>
+          <div>
+            <h4>Solution</h4>
+            <p>Deployed OSPF across all sites with equal-cost multi-path routing, tuned hello/dead timers, and redundant WAN links terminating on separate routers.</p>
+          </div>
+        </div>
+        <div class="case-study">
+          <span class="case-step">03</span>
+          <div>
+            <h4>Outcome</h4>
+            <p>Verified failover under 900ms in simulation, documented the full config set, and handed off a runbook the client's own team could maintain.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+
+      <div class="contact-info">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-sub">Have a network to design or a site to build? Send a message.</p>
+
+        <ul class="contact-list">
+          <!-- Swap these with your real contact details -->
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:alex.rahman@example.com">alex.rahman@example.com</a></li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+8801000000000">+880 1000-000000</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Khulna, Bangladesh</li>
+          <li><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername</a></li>
+          <li><i class="fa-brands fa-github"></i> <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Your full name" autocomplete="name">
+          <span class="form-error" id="err-name"></span>
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@example.com" autocomplete="email">
+          <span class="form-error" id="err-email"></span>
+        </div>
+        <div class="form-row">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="What's this about?">
+          <span class="form-error" id="err-subject"></span>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Tell me a bit about your project"></textarea>
+          <span class="form-error" id="err-message"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+
+        <p class="form-success" id="form-success" role="status">
+          <i class="fa-solid fa-circle-check"></i> Message sent — I'll get back to you soon.
+        </p>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mono">alex<span class="brand-accent">@</span>portfolio</span>
+      <p>Network engineering and web development, built to hold up.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#proof">Proof of Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-social">
+      <!-- Swap with your real social links -->
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:alex.rahman@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+  <p class="footer-copy">© <span id="footer-year"></span> Alex Rahman. All rights reserved.</p>
+</footer>
+
+<!-- ============ PROJECT MODALS ============ -->
+<div class="modal-overlay" id="modal-overlay">
+
+  <div class="modal" id="modal-1" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+    <button class="modal-close" data-modal-close aria-label="Close">&times;</button>
+    <h3 id="modal-1-title">Enterprise Network Infrastructure Setup</h3>
+    <p><strong>Problem statement:</strong> A growing company needed a scalable network across three floors with isolated departmental traffic and centralized IP management.</p>
+    <p><strong>Solution:</strong> Designed a VLAN structure per department, configured inter-VLAN routing on a Layer 3 switch, ran OSPF between the core and distribution layers, and deployed a redundant DHCP scope with helper addresses.</p>
+    <p><strong>Outcome:</strong> Zero IP conflicts post-deployment, full inter-department isolation verified with ACL testing, and a documented config baseline for future expansion.</p>
+  </div>
+
+  <div class="modal" id="modal-2" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+    <button class="modal-close" data-modal-close aria-label="Close">&times;</button>
+    <h3 id="modal-2-title">Campus Network Design &amp; Security Integration</h3>
+    <p><strong>Problem statement:</strong> A campus network needed to separate student, staff, and guest wireless traffic while keeping internal resources protected from external access.</p>
+    <p><strong>Solution:</strong> Configured a wireless LAN controller with SSID-to-VLAN mapping, applied ACLs to restrict guest traffic to internet-only, and set up NAT overload for outbound internet access.</p>
+    <p><strong>Outcome:</strong> Guest devices confirmed unable to reach internal subnets in penetration testing, with no measurable impact on staff network performance.</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
